@@ -11,6 +11,16 @@ Attention
 The code is highly experimental and the API will vary (as did in the past) and even break -
 so probably you'll have to make changes to make it work.
 
+Configuration
+=============
+
+Just throw the models into your models folder and create an initializer plenty.rb:
+
+    Plenty.configure do |config|
+      config.host      = 'www.example.com'
+      config.api_token = 'http://www.example.com$THIS_IS_VERY_SECRET'
+    end
+
 Copyright
 =========
 
